@@ -4,14 +4,14 @@
     <xpath expr="." position="inside">
       <script type="text/javascript" src="/tree_view/static/src/components/tree_item/TreeItem.js"></script>
 
-      <script type="text/javascript" src="/tree_view/static/src/owl_tree_view/owl_tree_view.js"></script>
-      <script type="text/javascript" src="/tree_view/static/src/owl_tree_view/owl_tree_model.js"></script>
-      <script type="text/javascript" src="/tree_view/static/src/owl_tree_view/owl_tree_controller.js"></script>
-      <script type="text/javascript" src="/tree_view/static/src/owl_tree_view/owl_tree_renderer.js"></script>
+      <script type="text/javascript" src="/tree_view/static/src/tree_view/tree_view.js"></script>
+      <script type="text/javascript" src="/tree_view/static/src/tree_view/tree_view_model.js"></script>
+      <script type="text/javascript" src="/tree_view/static/src/tree_view/tree_view_controller.js"></script>
+      <script type="text/javascript" src="/tree_view/static/src/tree_view/tree_view_renderer.js"></script>
     </xpath>
     <xpath expr="link[last()]" position="after">
       <link rel="stylesheet" type="text/scss" href="/tree_view/static/src/components/tree_item/tree_item.scss"/>
-      <link rel="stylesheet" type="text/scss" href="/tree_view/static/src/owl_tree_view/owl_tree_view.scss"/>
+      <link rel="stylesheet" type="text/scss" href="/tree_view/static/src/tree_view/tree_view.scss"/>
     </xpath>
   </template>
 </odoo>

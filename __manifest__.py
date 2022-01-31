@@ -20,20 +20,18 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base', 'my_library'],
+    'depends': ['base'],
 
     "qweb": [
         "static/src/components/tree_item/TreeItem.xml",
-        "static/src/xml/owl_tree_view.xml",
+        "static/src/xml/tree_view.xml",
     ],
 
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
         "views/assets.xml",
-        "views/my_library_views.xml",
-        'views/views.xml',
-        'views/templates.xml',
+        "views/tree_view_category.xml",
     ],
     # only loaded in demonstration mode
     'demo': [

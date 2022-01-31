@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <!-- action for my library -->
+  <record id='tree_view_category_action' model='ir.actions.act_window'>
+    <field name="name">Tree View Category</field>
+    <field name="res_model">tree_view.category</field>
+    <field name="view_mode">tree_view,tree,form</field>
+  </record>
+
+  <menuitem name="My Category" id="tree_view_gategory_base_menu" />
+  <menuitem name="Categories" id="tree_view_gategory_menu" parent="tree_view_gategory_base_menu" action="tree_view_category_action"/>
+
+  <!-- tree view for my library -->
+  <record id="tree_view_category" model="ir.ui.view">
+    <field name="name">Tree View Category</field>
+    <field name="model">tree_view.category</field>
+    <field name="arch" type="xml">
+      <tree_view></tree_view>
+    </field>
+  </record>
+
+  <!-- Tree(list) View -->
+  <record id="tree_view_category_tree" model="ir.ui.view">
+    <field name="name">Tree View Category List</field>
+    <field name="model">tree_view.category</field>
+    <field name="arch" type="xml">
+      <tree>
+        <field name="name"/>
+        <field name="parent_id"/>
+      </tree>
+    </field>
+  </record>
+</odoo>
