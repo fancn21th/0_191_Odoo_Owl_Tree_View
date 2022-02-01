@@ -27,6 +27,7 @@ odoo.define("tree_view.TreeViewRenderer", function (require) {
   const components = {
     TreeItem: require("tree_view/static/src/components/tree_item/TreeItem.js"),
   };
+
   Object.assign(TreeViewRenderer, {
     components,
     defaultProps: {
