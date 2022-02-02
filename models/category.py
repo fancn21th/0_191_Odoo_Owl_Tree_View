@@ -12,3 +12,4 @@ class Category(models.Model):
         'tree_view.category', '父类', index=True, ondelete='cascade')
     child_id = fields.One2many(
         'tree_view.category', 'parent_id', '子类')
+    parent_path = fields.Char(index=True)
